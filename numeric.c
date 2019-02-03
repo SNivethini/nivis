@@ -1,17 +1,13 @@
 #include<stdio.h>
-void main()
+#include<ctype.h>
+ 
+int main()
 {
-char s[5],i;
-scanf("%s",&s);
-
-{
-if((s[i]>'a')&&(s[i]<'z'))
-      {
-         printf("No");
-
-       }
- else
-     {
-    printf("yes",s[i]);
-     }
-}}
+    char a;
+    scanf( "%c", &a );
+    if( isdigit(a) )
+        printf( "yes", a );
+    else
+        printf( "No", a );
+    return 0;
+   }
