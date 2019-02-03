@@ -2,23 +2,23 @@
  
 int main()
 {
+    int array[15], minimum, size, c, location = 1;
+    scanf("%d", &size);
  
-        int array[5], size, i, min;
-	scanf("%d", &size);
+    for (c = 0; c < size; c++)
+        scanf("%d", &array[c]);
  
-        for (i = 0; i < size; i++)
-		scanf("%d", &array[i]);
+    minimum = array[0];
  
-        min = array[0];
- 
-        for (i = 1; i < size; i++) 
+    for (c = 1; c < size; c++)
+    {
+        if (array[c] < minimum)
         {
-		if (min >array[i])
-			min = array[i];
-	}
+           minimum = array[c];
+           location = c+1;
+        }
+    }
  
-        printf("\ %d", min);
- 
-        return 0;
- 
+    printf(" %d\n", minimum);
+    return 0;
 }
