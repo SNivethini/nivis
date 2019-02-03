@@ -1,2 +1,2 @@
-a=str(input())
-print(a[::-1])
+inp=str(input())
+print(inp[::-1])
