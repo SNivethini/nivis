@@ -7,7 +7,7 @@ scanf("%s",&s);
 {
 if((s[i]>'a')&&(s[i]<'z'))
       {
-         printf("no");
+         printf("No");
 
        }
  else
