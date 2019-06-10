@@ -1,3 +1,3 @@
-in=input()
-l=in.count(" ")
+string=input()
+l=string.count(" ")
 print(l)
