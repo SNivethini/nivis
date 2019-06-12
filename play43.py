@@ -1,2 +1,2 @@
-in=input()
-print(in[::3])
+i=input()
+print(i[::3])
